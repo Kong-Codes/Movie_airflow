@@ -14,3 +14,4 @@ airflow.db
  .astro/
  .dockerignore
 .yaml
+.pem
