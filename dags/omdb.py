@@ -1,11 +1,8 @@
-import logging
 import requests
-import os
 import boto3
 import pandas as pd
 import pyarrow
 import pandas as pd
-import s3fs
 from io import StringIO
 from dotenv import load_dotenv
 from airflow.models import Variable
