@@ -1,0 +1,8 @@
+apache-airflow
+pandas
+pyarrow
+python-dotenv
+Requests
+s3fs
+pytest
+plyvel
