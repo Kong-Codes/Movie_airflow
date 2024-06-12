@@ -11,13 +11,11 @@ from dotenv import load_dotenv
 from airflow.models import Variable
 
 load_dotenv()
-aws_access_key_id = 'AKIAYS2NREYQSTEON6TV'
-aws_secret_access_key = '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'
 
 s3_client = boto3.client(
     's3',
-    aws_access_key_id=aws_access_key_id,
-    aws_secret_access_key=aws_secret_access_key
+    aws_access_key_id=Variable.get('aws_access_key_id'),
+    aws_secret_access_key=Variable.get('aws_secret_access_key')
 )
 
 
